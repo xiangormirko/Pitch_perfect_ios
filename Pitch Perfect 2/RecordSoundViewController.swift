@@ -90,6 +90,7 @@ class RecordSoundViewController: UIViewController, AVAudioRecorderDelegate {
         audioRecorder.stop()
         var audioSession = AVAudioSession.sharedInstance()
         audioSession.setActive(false, error: nil)
+        recordingLabel.hidden = true
     }
 }
 

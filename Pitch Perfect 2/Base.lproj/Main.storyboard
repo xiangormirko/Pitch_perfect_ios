@@ -2,6 +2,7 @@
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="7706" systemVersion="14D136" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="ejT-jc-BlT">
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7703"/>
+        <capability name="Alignment constraints with different attributes" minToolsVersion="5.1"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
@@ -103,6 +104,7 @@
                         <viewControllerLayoutGuide type="bottom" id="v78-i1-vo8"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="DLR-qt-mJG">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="53J-4W-KzT">
@@ -149,12 +151,12 @@
                                 <exclude reference="cU2-Va-56o"/>
                             </mask>
                             <mask key="constraints">
-                                <exclude reference="40T-7q-BJU"/>
-                                <exclude reference="4oD-kH-iJv"/>
+                                <exclude reference="agl-U7-2gl"/>
                                 <exclude reference="1FV-70-BIq"/>
                                 <exclude reference="BkG-8G-Nda"/>
+                                <exclude reference="40T-7q-BJU"/>
+                                <exclude reference="4oD-kH-iJv"/>
                                 <exclude reference="NfL-cJ-4ho"/>
-                                <exclude reference="agl-U7-2gl"/>
                             </mask>
                         </variation>
                         <variation key="widthClass=compact">
@@ -164,12 +166,12 @@
                                 <include reference="cU2-Va-56o"/>
                             </mask>
                             <mask key="constraints">
-                                <include reference="40T-7q-BJU"/>
-                                <include reference="4oD-kH-iJv"/>
+                                <include reference="agl-U7-2gl"/>
                                 <include reference="1FV-70-BIq"/>
                                 <include reference="BkG-8G-Nda"/>
+                                <include reference="40T-7q-BJU"/>
+                                <include reference="4oD-kH-iJv"/>
                                 <include reference="NfL-cJ-4ho"/>
-                                <include reference="agl-U7-2gl"/>
                             </mask>
                         </variation>
                     </view>

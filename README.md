@@ -17,4 +17,6 @@ foundation
 INSTALLATION
 -------------------
 Navigate to the desired folder.
--git clone https://github.com/xiangormirko/pitch_perfect_ios.git 
+-git clone https://github.com/xiangormirko/Pitch_perfect_ios.git 
+-open the file title 'Pitch Perfect 2.xcodeproj'
+-Thanks and enjoy!

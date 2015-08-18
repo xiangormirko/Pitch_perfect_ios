@@ -68,12 +68,12 @@
                                 <exclude reference="jw6-gH-JUt"/>
                             </mask>
                             <mask key="constraints">
-                                <exclude reference="O0e-6n-aCC"/>
-                                <exclude reference="SRb-dQ-Gl6"/>
                                 <exclude reference="jGB-Vt-3hx"/>
                                 <exclude reference="zXM-0a-CTL"/>
                                 <exclude reference="Suk-qi-srW"/>
                                 <exclude reference="ba0-AX-3aQ"/>
+                                <exclude reference="O0e-6n-aCC"/>
+                                <exclude reference="SRb-dQ-Gl6"/>
                                 <exclude reference="ZmW-oo-9qT"/>
                                 <exclude reference="otv-yv-byi"/>
                             </mask>
@@ -86,12 +86,12 @@
                                 <include reference="jw6-gH-JUt"/>
                             </mask>
                             <mask key="constraints">
-                                <include reference="O0e-6n-aCC"/>
-                                <include reference="SRb-dQ-Gl6"/>
                                 <include reference="jGB-Vt-3hx"/>
                                 <include reference="zXM-0a-CTL"/>
                                 <include reference="Suk-qi-srW"/>
                                 <include reference="ba0-AX-3aQ"/>
+                                <include reference="O0e-6n-aCC"/>
+                                <include reference="SRb-dQ-Gl6"/>
                                 <include reference="ZmW-oo-9qT"/>
                                 <include reference="otv-yv-byi"/>
                             </mask>

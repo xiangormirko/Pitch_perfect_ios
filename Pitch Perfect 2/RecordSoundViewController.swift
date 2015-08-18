@@ -38,10 +38,13 @@ class RecordSoundViewController: UIViewController, AVAudioRecorderDelegate {
         // Dispose of any resources that can be recreated.
     }
 
+    @IBOutlet weak var tapToRecord: UILabel!
+    
     @IBAction func recordButton(sender: UIButton) {
         recordingLabel.hidden = false
         stopButton.hidden = false
         recordButton.enabled = false
+        tapToRecord.hidden = true
         
         let dirPath = NSSearchPathForDirectoriesInDomains(.DocumentDirectory, .UserDomainMask, true)[0] as! String
         
@@ -66,9 +69,7 @@ class RecordSoundViewController: UIViewController, AVAudioRecorderDelegate {
     func audioRecorderDidFinishRecording(recorder: AVAudioRecorder!, successfully flag: Bool) {
         
         if(flag){
-            recordedAudio = RecordedAudio()
-            recordedAudio.filePathUrl = recorder.url
-            recordedAudio.title = recorder.url.lastPathComponent
+            recordedAudio = RecordedAudio(filePathUrl: recorder.url, title: recorder.url.lastPathComponent!)
             self.performSegueWithIdentifier("stopRecording", sender: recordedAudio)
         }else{
             println("Recording was not successful")
@@ -91,6 +92,7 @@ class RecordSoundViewController: UIViewController, AVAudioRecorderDelegate {
         var audioSession = AVAudioSession.sharedInstance()
         audioSession.setActive(false, error: nil)
         recordingLabel.hidden = true
+        tapToRecord.hidden = false
     }
 }
 

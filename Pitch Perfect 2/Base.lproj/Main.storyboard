@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="7706" systemVersion="14D136" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="ejT-jc-BlT">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="7706" systemVersion="14E46" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="ejT-jc-BlT">
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7703"/>
         <capability name="Alignment constraints with different attributes" minToolsVersion="5.1"/>
@@ -38,13 +38,16 @@
                                 <state key="normal" image="StopButton">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
-                                <variation key="widthClass=compact" misplaced="YES">
-                                    <rect key="frame" x="160" y="462" width="80" height="80"/>
-                                </variation>
                                 <connections>
                                     <action selector="stopB:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="jPy-Bs-N12"/>
                                 </connections>
                             </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Tap to Record" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jw6-gH-JUt">
+                                <rect key="frame" x="0.0" y="-21" width="42" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="0.0" green="0.22193287040000001" blue="0.3566550926" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" red="0.22320564888532113" green="0.71720602867940997" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
@@ -53,19 +56,24 @@
                             <constraint firstItem="vC9-Ac-JWd" firstAttribute="top" secondItem="efa-oV-euV" secondAttribute="bottom" constant="46" id="Suk-qi-srW"/>
                             <constraint firstAttribute="centerX" secondItem="ruc-ho-Reo" secondAttribute="centerX" id="ZmW-oo-9qT"/>
                             <constraint firstAttribute="centerX" secondItem="vC9-Ac-JWd" secondAttribute="centerX" id="ba0-AX-3aQ"/>
+                            <constraint firstItem="jw6-gH-JUt" firstAttribute="top" secondItem="efa-oV-euV" secondAttribute="bottom" constant="8" id="jGB-Vt-3hx"/>
                             <constraint firstItem="ruc-ho-Reo" firstAttribute="top" secondItem="vC9-Ac-JWd" secondAttribute="bottom" constant="45" id="otv-yv-byi"/>
+                            <constraint firstAttribute="centerX" secondItem="jw6-gH-JUt" secondAttribute="centerX" constant="1" id="zXM-0a-CTL"/>
                         </constraints>
                         <variation key="default">
                             <mask key="subviews">
                                 <exclude reference="vC9-Ac-JWd"/>
                                 <exclude reference="efa-oV-euV"/>
                                 <exclude reference="ruc-ho-Reo"/>
+                                <exclude reference="jw6-gH-JUt"/>
                             </mask>
                             <mask key="constraints">
-                                <exclude reference="Suk-qi-srW"/>
-                                <exclude reference="ba0-AX-3aQ"/>
                                 <exclude reference="O0e-6n-aCC"/>
                                 <exclude reference="SRb-dQ-Gl6"/>
+                                <exclude reference="jGB-Vt-3hx"/>
+                                <exclude reference="zXM-0a-CTL"/>
+                                <exclude reference="Suk-qi-srW"/>
+                                <exclude reference="ba0-AX-3aQ"/>
                                 <exclude reference="ZmW-oo-9qT"/>
                                 <exclude reference="otv-yv-byi"/>
                             </mask>
@@ -75,12 +83,15 @@
                                 <include reference="vC9-Ac-JWd"/>
                                 <include reference="efa-oV-euV"/>
                                 <include reference="ruc-ho-Reo"/>
+                                <include reference="jw6-gH-JUt"/>
                             </mask>
                             <mask key="constraints">
-                                <include reference="Suk-qi-srW"/>
-                                <include reference="ba0-AX-3aQ"/>
                                 <include reference="O0e-6n-aCC"/>
                                 <include reference="SRb-dQ-Gl6"/>
+                                <include reference="jGB-Vt-3hx"/>
+                                <include reference="zXM-0a-CTL"/>
+                                <include reference="Suk-qi-srW"/>
+                                <include reference="ba0-AX-3aQ"/>
                                 <include reference="ZmW-oo-9qT"/>
                                 <include reference="otv-yv-byi"/>
                             </mask>
@@ -91,6 +102,7 @@
                         <outlet property="recordButton" destination="efa-oV-euV" id="eyG-dO-edD"/>
                         <outlet property="recordingLabel" destination="vC9-Ac-JWd" id="wwM-dg-LZn"/>
                         <outlet property="stopButton" destination="ruc-ho-Reo" id="fDP-HD-S2W"/>
+                        <outlet property="tapToRecord" destination="jw6-gH-JUt" id="HMw-YE-H4p"/>
                         <segue destination="jkv-6p-5NI" kind="show" identifier="stopRecording" id="10f-rU-Tkz"/>
                     </connections>
                 </viewController>
